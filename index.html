@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+  </script>
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+  </script>
+  <style>
+    model-viewer {
+      width:80vw;
+      height: 80vh;
+    }
+  </style>
+
+<body style="margin: 0px; overflow: hidden;">
+  <model-viewer
+  ar
+  camera-controls
+  auto-rotate
+  touch-action="pan-y"
+  src="./coracao.glb"
+  ios-src="./Predio.gltf"
+  ar-modes="scene-viewer quick-look"
+  >
+<button 
+slot="ar-button"
+style="background-color: white; border-radius: 4px; height:20px; width:200px border: none; position: absolute; bottom: 95%; right: 50%; ">
+  👋 Activate AR
+</button>
+</model-viewer>
+</body>
+</html>
